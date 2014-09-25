@@ -1,4 +1,5 @@
 ## Robotic Simulator
+
 =======
 
 It's a test application that solve the problem below:
@@ -6,6 +7,23 @@ It's a test application that solve the problem below:
 This is a simulator of a “toy robot”. You will be writing code to place and move the “robot” within a grid on a tabletop. No graphical output is required.
 
 The robot will be placed and move on a square tabletop, of dimensions 5 units x 5 units.
+
+
+##To Test The apps/simulator
+
+* **index.html** --> Fully functionality
+
+* **test.html** --> Test the function. There is a couple of function, they are: 
+	* MakeViewPort() --> How many dimensions do you need, parameter 1 x parameter 2 Y
+	* Place() --> Coordinate the robot will be initialized. Parameter 1: X Coordinate, Parameter 2: Y, Parameter 3: Direction(West/East/North/South)
+	* Move() --> Move the robot to the arranged direction. Parameter 1: maxViewport dimensions (can be taken from MakeViewPort function), 
+	* Turn() --> Turn the robot to right or left. Parameter 1: right/left
+
+Using Web Browser, host the simulator to web server. 
+In Console Log (Browser) there will be coordinate logged. 
+
+
+=======
 
 There are no other obstructions on the table surface.
 
@@ -55,6 +73,11 @@ MOVE
 REPORT
 Output: 
 3,3,NORTH
+
+
+
+
+
 
 
 

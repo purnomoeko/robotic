@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<title>Robotic Test for Software Seni</title>
+<link href="css/main.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="viewport">
+        
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            
+           $('body .viewport').PlaceRobot(0,0, 'east');
+           $('body .viewport').Turn('right');
+           $('body .viewport').Turn('left');
+
+           $('body .viewport').Move(maxViewPort);
+           $('body .viewport').Move(maxViewPort);
+           $('body .viewport').Move(maxViewPort);
+           
+           
+        });
+    </script>
+</body>
+</html>

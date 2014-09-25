@@ -4,7 +4,7 @@ var DIRECTION = {
     "east" : [90, '>'],
     "south" : [180, 'v']
 };
-
+var maxViewPort;
 
 $(function(){
     
@@ -93,7 +93,7 @@ $(function(){
         $(this).PlaceRobot(currentPosition[1], currentPosition[0], currentDirection);
     }
     
-    var maxViewPort = $('body .viewport').CreateViewPort(5, 5);
+    maxViewPort= $('body .viewport').CreateViewPort(5, 5);
 
     
     $('.command input').click(function(){
