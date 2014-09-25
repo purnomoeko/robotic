@@ -29,11 +29,13 @@ $(function(){
             if($(this).attr("data") == (positionY + "," + positionX)){
                 for(x in DIRECTION){
                     if(x == direction){
-                        $(this).append("<img src='android_robot.png' alt='robot-png' class='robot " + direction + "'/> <span>" + DIRECTION[x][1]+ "</span>");
+                        $(this).append("<img src='android_robot.png' alt='robot-png' data='"+ positionX + "," + positionY + "," + direction + "'class='robot " +
+                                       direction + "'/> <span>" + DIRECTION[x][1]+ "</span>");
                     }
                 }
             }
         });
+        
     }
     
     $.fn.Turn = function(direction){
@@ -118,6 +120,8 @@ $(function(){
             if($('.robot').length > 0)
                 $('body .viewport').Move(maxViewPort);
        }
+       
+       $(this).siblings('.coordinate-now').find('h2').html($('.robot').attr('data'));
     });
     
     

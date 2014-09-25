@@ -35,3 +35,4 @@ img.south{ -ms-transform: rotate(180deg); /* IE 9 */
     padding: 5px 10px;
 }
 .command {margin-top:20px;}
+.command .coordinate-now h2{font-size: 16px;}
