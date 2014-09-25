@@ -13,7 +13,7 @@ The robot will be placed and move on a square tabletop, of dimensions 5 units x 
 
 * **index.html** --> Fully functionality
 
-* **test.html** --> Test the function. There is a couple of function, they are: 
+* **test.html** --> Test the function. There are some functions to run this robotic simulator, they are: 
 	* MakeViewPort() --> How many dimensions do you need, parameter 1 x parameter 2 Y
 	* Place() --> Coordinate the robot will be initialized. Parameter 1: X Coordinate, Parameter 2: Y, Parameter 3: Direction(West/East/North/South)
 	* Move() --> Move the robot to the arranged direction. Parameter 1: maxViewport dimensions (can be taken from MakeViewPort function), 
@@ -21,6 +21,8 @@ The robot will be placed and move on a square tabletop, of dimensions 5 units x 
 
 Using Web Browser, host the simulator to web server. 
 In Console Log (Browser) there will be coordinate logged. 
+
+or you can view full demo on this page http://128.199.179.70/robotic/ 
 
 
 =======
