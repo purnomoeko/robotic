@@ -1,0 +1,12 @@
+body{
+    background-color: #fbfbfb;
+}
+
+.element{
+    width:48px;
+    height: 48px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.clear-both{clear: both;}
