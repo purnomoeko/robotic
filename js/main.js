@@ -29,7 +29,7 @@ $(function(){
             if($(this).attr("data") == (positionY + "," + positionX)){
                 for(x in DIRECTION){
                     if(x == direction){
-                        $(this).append("<img src='android_robot.png' alt='robot-png' data='"+ positionX + "," + positionY + "," + direction + "'class='robot " +
+                        $(this).html("<img src='android_robot.png' alt='robot-png' data='"+ positionX + "," + positionY + "," + direction + "'class='robot " +
                                        direction + "'/> <span>" + DIRECTION[x][1]+ "</span>");
                     }
                 }
@@ -101,12 +101,12 @@ $(function(){
        if($(this).hasClass('place')) {
             $('.robot').remove();
             $('.robot').siblings('span').remove();
-            var placeCoordinate = prompt("Please Enter Coordinate", "0,0");
+            var placeCoordinate = prompt("Please Enter Coordinate", "0,0,east");
             placeCoordinate = placeCoordinate.split(',');
             if(maxViewPort[0] < placeCoordinate[0] || maxViewPort[1] < placeCoordinate[1])
                 alert("Please input below MAX Viewport");
                 
-            $('body .viewport').PlaceRobot(placeCoordinate[0], placeCoordinate[1], 'north');        
+            $('body .viewport').PlaceRobot(placeCoordinate[0], placeCoordinate[1], placeCoordinate[2]);        
        }
        else if($(this).hasClass('right')){
             if($('.robot').length > 0)
